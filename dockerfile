@@ -1,3 +1,3 @@
 FROM openjdk:17-alpine
-COPY target/*.jar /demo.jar
+COPY target/demo.jar /demo.jar
 ENTRYPOINT ["java", "-jar", "/demo.jar"]
