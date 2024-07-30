@@ -1,3 +1,3 @@
-FROM openjdk:11-jre-slim
-COPY target/*.jar /app.jar
+FROM openjdk:17-alpine
+COPY target/*.jar /demo.jar
 ENTRYPOINT ["java", "-jar", "/demo.jar"]
