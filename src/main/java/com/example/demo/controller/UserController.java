@@ -15,30 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 	
-//	@Autowired
-//	private UserService userService;
-//	
-//	@Autowired
-//	private PermissionService permissionService;
 	
-	
-//	@CrossOrigin
-//	@GetMapping("/{userId}/permissions")
-//	public ResponseEntity<com.philips.responses.User> getPermissions(@PathVariable Long userId) {
-//		return ResponseEntity.ok(permissionService.getResources(userId));
-//	}
-
 	@GetMapping()
 	public ResponseEntity<String> welcome() {
 		return ResponseEntity.ok("welcome");
 	}
 	
-//	@CrossOrigin
-//	@PostMapping()
-//	public ResponseEntity<Long> registerUser(@RequestBody User user) {
-//		return ResponseEntity.ok(userService.registerUser(user));
-//	}
-
 }
 
 	
